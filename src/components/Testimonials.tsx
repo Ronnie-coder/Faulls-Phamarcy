@@ -65,8 +65,9 @@ export function Testimonials() {
                   <div className="p-1 h-full">
                     <Card className="h-full flex flex-col">
                       <CardContent className="flex-grow flex flex-col justify-center p-6">
+                        {/* THIS IS THE CORRECTED LINE: */}
                         <blockquote className="text-muted-foreground italic mb-4">
-                          "{testimonial.quote}"
+                          {testimonial.quote}
                         </blockquote>
                         <p className="font-bold text-right mt-auto">- {testimonial.name}</p>
                         <p className="text-sm text-muted-foreground text-right">{testimonial.location}</p>
